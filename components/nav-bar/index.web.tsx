@@ -29,11 +29,11 @@ export default class NavBar extends React.Component<NavBarProps, any> {
       <div {...restProps} className={wrapCls}>
         <div className={`${prefixCls}-left`} role="button" onClick={onLeftClick}>
           {
-            iconName ? (
+            iconName && (
               <span className={`${prefixCls}-left-icon`} aria-hidden="true">
                 <Icon type={iconName}/>
               </span>
-            ) : null
+            )
           }
           <span className={`${prefixCls}-left-content`}>{leftContent}</span>
         </div>

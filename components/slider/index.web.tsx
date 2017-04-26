@@ -1,8 +1,7 @@
 import React from 'react';
-import RcSlider from 'rc-slider';
+import RcSlider from 'rc-slider/lib/Slider';
+import Handle from 'rc-slider/lib/Handle'
 import SliderProps from './PropsType';
-
-const Handle = RcSlider.Handle;
 
 export default class Slider extends React.Component<SliderProps, any> {
   static defaultProps = {
